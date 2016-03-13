@@ -11,7 +11,7 @@ module.exports = function(name, other, remote) {
     "remote": remote,
     "intervalId": null,
     "data": new EventEmitter(),
-    "error": function(d) {
+    "error": function(server, d) {
       return function(err) {
         server.close();
         d.reject(err);
@@ -67,7 +67,7 @@ module.exports = function(name, other, remote) {
 
       this.server = server;
 
-      server.on('error', this.error(d));
+      server.on('error', this.error(server, d));
       server.on('listening', this.listening(server, d));
       server.on('message', this.message(this));
 
