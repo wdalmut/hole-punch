@@ -5,14 +5,16 @@ Just an example about P2P using the hole punching technique over UDP/IP
 ## Start the server
 
 ```js
-node server.js
+node server.js [PORT]
 ```
+
+The default port is: 41234
 
 ## Start clients
 
 **format**
 ```sh
-node client.js server-addr server-port your-name other-client-name
+node client.js [server-addr] [server-port] [your-name] [other-client-name]
 ```
 
 ```sh
