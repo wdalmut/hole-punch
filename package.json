@@ -1,13 +1,21 @@
 {
   "name": "hole-punch",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "P2P hole punching technique example using UDP/IP support",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Walter Dal Mut <walter.dalmut@gmail.com>",
   "license": "MIT",
+  "bin": {
+    "server": "./server.js",
+    "client": "./client.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wdalmut/hole-punch.git"
+  },
   "dependencies": {
     "q": "^1.4.1",
     "underscore": "^1.8.3"

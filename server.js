@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var Server = require('./server/instance');
 
 var port = process.argv[2] || 41234;
