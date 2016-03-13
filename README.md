@@ -10,6 +10,11 @@ node server.js
 
 ## Start clients
 
+**format**
+```sh
+node client.js server-addr server-port your-name other-client-name
+```
+
 ```sh
 # start a client
 node client.js 1.1.1.1 41234 client1 client2
